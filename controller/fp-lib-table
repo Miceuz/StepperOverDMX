@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name pololu-8825)(type KiCad)(uri /home/miceuz/Xaltura/fresnel-spin/driver/pololu-8825.pretty)(options "")(descr ""))
+)

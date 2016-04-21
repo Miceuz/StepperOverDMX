@@ -1,0 +1,215 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:max3096
+LIBS:w_connectors
+LIBS:dips-s
+LIBS:controller-cache
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C2
+U 1 1 5715D8EC
+P 7200 5000
+F 0 "C2" H 7315 5046 50  0000 L CNN
+F 1 "1u" H 7315 4955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7238 4850 30  0001 C CNN
+F 3 "" H 7200 5000 60  0000 C CNN
+	1    7200 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5715D961
+P 9500 5000
+F 0 "C3" H 9615 5046 50  0000 L CNN
+F 1 "1u" H 9615 4955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9538 4850 30  0001 C CNN
+F 3 "" H 9500 5000 60  0000 C CNN
+	1    9500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 5715D991
+P 6850 5000
+F 0 "C1" H 6965 5046 50  0000 L CNN
+F 1 "CP1" H 6965 4955 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L20_P5" H 6850 5000 60  0001 C CNN
+F 3 "" H 6850 5000 60  0000 C CNN
+F 4 "?" H 6850 5000 60  0001 C CNN "PartNo"
+F 5 "?" H 6850 5000 60  0001 C CNN "Manufacturer"
+F 6 "?" H 6850 5000 60  0001 C CNN "Distributor"
+	1    6850 5000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CP1 C4
+U 1 1 5715DA12
+P 9800 5000
+F 0 "C4" H 9915 5046 50  0000 L CNN
+F 1 "CP1" H 9915 4955 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D10_L20_P5" H 9800 5000 60  0001 C CNN
+F 3 "" H 9800 5000 60  0000 C CNN
+F 4 "?" H 9800 5000 60  0001 C CNN "PartNo"
+F 5 "?" H 9800 5000 60  0001 C CNN "Manufacturer"
+F 6 "?" H 9800 5000 60  0001 C CNN "Distributor"
+	1    9800 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 4850 9800 4850
+Wire Wire Line
+	6850 5150 7350 5150
+Connection ~ 9800 5150
+Connection ~ 7200 5150
+Wire Wire Line
+	6100 4850 7700 4850
+$Comp
+L GND #PWR01
+U 1 1 5715DAF9
+P 7200 5150
+F 0 "#PWR01" H 7200 4900 50  0001 C CNN
+F 1 "GND" H 7205 4977 50  0000 C CNN
+F 2 "" H 7200 5150 60  0000 C CNN
+F 3 "" H 7200 5150 60  0000 C CNN
+	1    7200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5715DB1D
+P 9800 4850
+F 0 "#PWR02" H 9800 4700 50  0001 C CNN
+F 1 "+5V" H 9815 5023 50  0000 C CNN
+F 2 "" H 9800 4850 60  0000 C CNN
+F 3 "" H 9800 4850 60  0000 C CNN
+	1    9800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 5715DB49
+P 6850 4850
+F 0 "#PWR03" H 6850 4700 50  0001 C CNN
+F 1 "VCC" H 6867 5023 50  0000 C CNN
+F 2 "" H 6850 4850 60  0000 C CNN
+F 3 "" H 6850 4850 60  0000 C CNN
+	1    6850 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 4850
+Connection ~ 9800 4850
+$Comp
+L MAX5024 U1
+U 1 1 57171A95
+P 8300 5050
+F 0 "U1" H 8350 5508 60  0000 C CNN
+F 1 "MAX5024" H 8350 5402 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm" H 8350 5402 60  0001 C CNN
+F 3 "" H 8300 5050 60  0000 C CNN
+F 4 "?" H 8300 5050 60  0001 C CNN "PartNo"
+F 5 "?" H 8300 5050 60  0001 C CNN "Manufacturer"
+F 6 "2515990" H 8300 5050 60  0001 C CNN "Distributor"
+	1    8300 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 4850
+Connection ~ 9500 4850
+$Comp
+L GND #PWR030
+U 1 1 5717216C
+P 9800 5150
+F 0 "#PWR030" H 9800 4900 50  0001 C CNN
+F 1 "GND" H 9805 4977 50  0000 C CNN
+F 2 "" H 9800 5150 60  0000 C CNN
+F 3 "" H 9800 5150 60  0000 C CNN
+	1    9800 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5150 9800 5150
+Wire Wire Line
+	7700 4950 7550 4950
+Wire Wire Line
+	7550 4950 7550 4850
+Connection ~ 7550 4850
+Wire Wire Line
+	7700 5050 7350 5050
+Wire Wire Line
+	7350 5050 7350 5150
+Wire Wire Line
+	9000 4950 9350 4950
+Wire Wire Line
+	9350 4950 9350 5150
+Connection ~ 9500 5150
+Wire Wire Line
+	9000 5150 9150 5150
+Wire Wire Line
+	9150 5150 9150 4850
+Connection ~ 9150 4850
+$Comp
+L CONN_01X02 P4
+U 1 1 571743FB
+P 5900 4900
+F 0 "P4" H 5819 4625 50  0000 C CNN
+F 1 "CONN_01X02" H 5819 4716 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch3.96mm_Friction_Lock" H 5819 4709 60  0001 C CNN
+F 3 "" H 5900 4900 60  0000 C CNN
+F 4 "?" H 5900 4900 60  0001 C CNN "PartNo"
+F 5 "?" H 5900 4900 60  0001 C CNN "Manufacturer"
+F 6 "?" H 5900 4900 60  0001 C CNN "Distributor"
+	1    5900 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 57174545
+P 6100 4950
+F 0 "#PWR031" H 6100 4700 50  0001 C CNN
+F 1 "GND" H 6105 4777 50  0000 C CNN
+F 2 "" H 6100 4950 60  0000 C CNN
+F 3 "" H 6100 4950 60  0000 C CNN
+	1    6100 4950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
