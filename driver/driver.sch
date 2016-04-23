@@ -299,11 +299,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 4050 3700 4700
 Wire Wire Line
-	5750 3000 5850 3000
-Wire Wire Line
-	5850 3000 5950 3000
-Wire Wire Line
-	5950 3000 6150 3000
+	5750 3000 6150 3000
 Connection ~ 5950 3000
 Connection ~ 5850 3000
 Wire Wire Line
@@ -401,16 +397,10 @@ F 3 "" H 5600 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2150 5250 2150
-Wire Wire Line
-	5250 2150 5600 2150
+	5100 2150 5600 2150
 Connection ~ 3300 2450
 Wire Wire Line
-	3050 2150 3300 2150
-Wire Wire Line
-	3300 2150 3650 2150
-Wire Wire Line
-	3650 2150 3800 2150
+	3050 2150 3800 2150
 $Comp
 L GND #PWR014
 U 1 1 5717A2B5
