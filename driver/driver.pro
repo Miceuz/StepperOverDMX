@@ -1,4 +1,4 @@
-update=Mon 18 Apr 2016 04:44:01 PM EEST
+update=Sun 24 Apr 2016 10:48:22 AM EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../fresnel.lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=pololu-drv8825
-LibName31=max3096
+LibName30=/home/miceuz/Xaltura/fresnel-spin/fresnel.lib/max3096
+LibName31=/home/miceuz/Xaltura/fresnel-spin/fresnel.lib/pololu-drv8825
