@@ -1,6 +1,10 @@
-update=Sun 24 Apr 2016 10:08:31 AM EEST
+update=22/05/2015 07:44:53
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -56,8 +60,3 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=w_connectors
-LibName31=/home/miceuz/Xaltura/fresnel-spin/fresnel.lib/dips-s
-LibName32=/home/miceuz/Xaltura/fresnel-spin/fresnel.lib/max3096
-[general]
-version=1
