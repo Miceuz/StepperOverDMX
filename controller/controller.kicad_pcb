@@ -710,14 +710,9 @@
     (pad 30 thru_hole oval (at -19.05 -7.62) (size 1.5748 2.286) (drill 0.8128) (layers *.Cu *.Mask F.SilkS)
       (net 3 +5V))
     (model ../fresnel.pretty/3d/arduino_nano.wrl
-      (at (xyz -0.978 -0.385 0))
+      (at (xyz 0.878 0.385 0))
       (scale (xyz 0.3937 0.3937 0.3937))
-      (rotate (xyz 0 0 0))
-    )
-    (model ../fresnel.pretty/3d/arduino_nano.wrl
-      (at (xyz -0.978 -0.385 -0.2))
-      (scale (xyz 0.3937 0.3937 0.3937))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
