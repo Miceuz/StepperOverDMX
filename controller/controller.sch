@@ -28,9 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:max3096
 LIBS:w_connectors
 LIBS:dips-s
+LIBS:max3096
 LIBS:controller-cache
 EELAYER 25 0
 EELAYER END
@@ -542,12 +542,12 @@ $EndComp
 $Comp
 L GND #PWR32
 U 1 1 571643DD
-P 12500 4450
-F 0 "#PWR32" H 12500 4200 50  0001 C CNN
-F 1 "GND" H 12505 4277 50  0000 C CNN
-F 2 "" H 12500 4450 60  0000 C CNN
-F 3 "" H 12500 4450 60  0000 C CNN
-	1    12500 4450
+P 12500 4550
+F 0 "#PWR32" H 12500 4300 50  0001 C CNN
+F 1 "GND" H 12505 4377 50  0000 C CNN
+F 2 "" H 12500 4550 60  0000 C CNN
+F 3 "" H 12500 4550 60  0000 C CNN
+	1    12500 4550
 	1    0    0    -1  
 $EndComp
 Text Label 12800 5200 2    60   ~ 0
@@ -680,7 +680,7 @@ F 3 "" H 11150 5500 60  0000 C CNN
 	1    11150 5500
 	1    0    0    -1  
 $EndComp
-Text Label 4700 3000 0    60   ~ 0
+Text Label 4700 3100 0    60   ~ 0
 DATA
 Text Label 6200 3100 2    60   ~ 0
 CLOCK
@@ -834,17 +834,10 @@ Wire Wire Line
 Connection ~ 4150 8150
 Connection ~ 7100 8150
 Wire Wire Line
-	3250 1000 3100 1000
+	3100 1000 3600 1000
 Wire Wire Line
 	3100 1000 3100 1600
 Connection ~ 3100 1000
-Wire Wire Line
-	3100 1700 3300 1700
-Wire Wire Line
-	3300 1700 3300 1900
-Wire Wire Line
-	3300 1900 3100 1900
-Connection ~ 3100 1900
 Wire Wire Line
 	5150 1800 3100 1800
 Wire Wire Line
@@ -1011,34 +1004,23 @@ Wire Wire Line
 Wire Wire Line
 	11850 5200 12800 5200
 Wire Wire Line
-	12200 2650 12200 4250
-Wire Wire Line
-	12200 4250 11850 4250
-Wire Wire Line
-	12300 2750 12300 4350
-Wire Wire Line
-	12300 4350 11850 4350
-Wire Wire Line
-	11850 4450 12500 4450
+	12300 2750 12300 4450
 Wire Wire Line
 	12250 5050 11850 5050
 Wire Wire Line
-	12250 4450 12250 5050
-Connection ~ 12250 4450
-Wire Wire Line
-	11850 4950 12250 4950
+	12250 4950 11850 4950
 Connection ~ 12250 4950
 Wire Wire Line
-	11850 4850 12250 4850
+	12250 4850 11850 4850
 Connection ~ 12250 4850
 Wire Wire Line
-	11850 4750 12250 4750
+	12250 4750 11850 4750
 Connection ~ 12250 4750
 Wire Wire Line
 	11850 4650 12250 4650
 Connection ~ 12250 4650
 Wire Wire Line
-	11850 4550 12250 4550
+	11850 4550 12500 4550
 Connection ~ 12250 4550
 Connection ~ 12100 5200
 Wire Wire Line
@@ -1159,7 +1141,7 @@ F 6 "?" H 3800 2600 60  0001 C CNN "Distributor"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 2100 4000 2100
+	4000 2100 5150 2100
 Wire Wire Line
 	5150 2200 4000 2200
 Connection ~ 4150 2300
@@ -1201,5 +1183,33 @@ Wire Wire Line
 	5850 2700 6100 2700
 Wire Wire Line
 	6100 2800 5850 2800
+$Comp
+L R R4
+U 1 1 571FBE18
+P 3600 1550
+F 0 "R4" H 3670 1596 50  0000 L CNN
+F 1 "R" H 3670 1505 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3530 1550 30  0001 C CNN
+F 3 "" H 3600 1550 30  0000 C CNN
+	1    3600 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1700 4050 1700
+Wire Wire Line
+	3600 1000 3600 1400
+Connection ~ 3250 1000
+Wire Wire Line
+	4050 1700 4050 2100
+Connection ~ 4050 2100
+Connection ~ 3600 1700
 Connection ~ 6100 2100
+Wire Wire Line
+	12250 4550 12250 5050
+Wire Wire Line
+	12300 4450 11850 4450
+Wire Wire Line
+	12200 2650 12200 4350
+Wire Wire Line
+	12200 4350 11850 4350
 $EndSCHEMATC
