@@ -9,7 +9,7 @@ public:
 	DipConfig(uint8_t _latchPin);
 	uint16_t get();
 	inline uint8_t isTestMode() {
-		return 0 != (get() & (uint16_t)(1 << 11));
+		return 0 != (get() & (uint16_t)(1 << 9));
 	};
 private:
 	uint8_t latchPin;	
